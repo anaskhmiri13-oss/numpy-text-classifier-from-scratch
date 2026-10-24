@@ -28,8 +28,13 @@ def tokenize(text: str) -> list:
     c=text.split()
     return c
 
-# Step 3 - tokenize_corpus (not yet solved)
-# TODO: implement
+# Step 3 - tokenize_corpus
+def tokenize_corpus(texts: list) -> list:
+    c=[]
+    for i in texts : 
+        t=tokenize(i)
+        c.append(t)
+    return c
 
 # Step 4 - split_train_val_test_indices (not yet solved)
 # TODO: implement
